@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pflegegrad Begleiter</title>
+  <meta name="description" content="Der Pflegegrad Begleiter hilft pflegenden Angehörigen: Pflege strukturiert dokumentieren, die richtigen Fragen beantworten und vorbereitet in die Begutachtung gehen.">
+  <script>
+    (function () {
+      var APP_STORE = "https://apps.apple.com/app/id6779939402";
+      var PLAY_LIVE = false;
+      var PLAY_STORE = "https://play.google.com/store/apps/details?id=com.fruhji.pflegegradbegleiter";
+      var ua = navigator.userAgent || navigator.vendor || "";
+      var isIOS = /iPhone|iPad|iPod/i.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+      var isAndroid = /Android/i.test(ua);
+      if (isIOS) { location.replace(APP_STORE); }
+      else if (isAndroid && PLAY_LIVE) { location.replace(PLAY_STORE); }
+    })();
+  </script>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #F4F8F6; color: #14201B; line-height: 1.7; min-height: 100vh;
+      display: flex; align-items: center; justify-content: center; padding: 40px 20px; }
+    main { max-width: 560px; text-align: center; }
+    h1 { font-size: 2.4rem; font-weight: 700; letter-spacing: -0.01em; margin-bottom: 12px; color: #1C3A30; }
+    .tagline { font-size: 1.2rem; color: #2E6E5C; margin-bottom: 22px; font-weight: 500; }
+    p.lead { color: #4a5b54; margin-bottom: 32px; }
+    .stores { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-bottom: 16px; }
+    .store { display: inline-flex; align-items: center; gap: 10px; padding: 12px 20px; border-radius: 13px;
+      background: #1C3A30; color: #F4F8F6; text-decoration: none; transition: opacity .15s; }
+    .store:hover { opacity: .85; }
+    .store svg { width: 22px; height: 22px; fill: currentColor; flex: none; }
+    .store small { display: block; font-size: 0.7rem; opacity: .75; font-weight: 400; line-height: 1.1; }
+    .store b { font-size: 0.98rem; font-weight: 600; line-height: 1.15; }
+    .store .label { text-align: left; }
+    .note { font-size: 0.82rem; color: #7a8c84; margin-bottom: 30px; }
+    .foot { font-size: 0.8rem; color: #9aa8a1; }
+    @media (prefers-color-scheme: dark) {
+      body { background: #101713; color: #DCE8E2; } h1 { color: #CFE8DD; } .tagline { color: #6FB8A2; }
+      p.lead { color: #93a59d; } .store { background: #CFE8DD; color: #101713; } .note { color: #6c7c74; } .foot { color: #5e6d66; } }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Pflegegrad Begleiter</h1>
+    <p class="tagline">Vorbereitet in die Begutachtung.</p>
+    <p class="lead">Der Pflegegrad Begleiter führt dich Schritt für Schritt durch die richtigen Fragen und baut dein Pflegetagebuch auf — Tag für Tag. Für pflegende Angehörige, die beim Termin gut vorbereitet sein wollen.</p>
+    <div class="stores">
+      <a class="store" href="https://apps.apple.com/app/id6779939402">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.365 1.43c0 1.14-.42 2.2-1.12 3-.78.9-2.05 1.6-3.1 1.52-.13-1.1.42-2.27 1.08-3 .76-.86 2.13-1.5 3.14-1.52zM20.9 17.13c-.55 1.27-.82 1.84-1.53 2.96-1 1.56-2.4 3.5-4.14 3.51-1.55.02-1.95-1.01-4.05-1-2.1.01-2.54 1.02-4.09 1-1.74-.02-3.07-1.77-4.06-3.33-2.78-4.35-3.07-9.46-1.36-12.18 1.22-1.94 3.14-3.07 4.95-3.07 1.84 0 3 1.01 4.52 1.01 1.48 0 2.38-1.01 4.51-1.01 1.61 0 3.32.88 4.54 2.39-3.99 2.18-3.34 7.88.31 9.72z"/></svg>
+        <span class="label"><small>Laden im</small><b>App Store</b></span>
+      </a>
+    </div>
+    <p class="note">Für iPhone &amp; iPad. Android-Version in Vorbereitung.</p>
+    <p class="foot">Fruhji</p>
+  </main>
+</body>
+</html>
